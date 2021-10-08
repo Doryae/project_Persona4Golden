@@ -1,0 +1,19 @@
+{
+  "name": "project_persona4golden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doryae/project_Persona4Golden.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Doryae/project_Persona4Golden/issues"
+  },
+  "homepage": "https://github.com/Doryae/project_Persona4Golden#readme"
+}
