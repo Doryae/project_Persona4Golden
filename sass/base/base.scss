@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "JosefinSans-Bold";
+    src: url(ress/font/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "JosefinSans";
+    src: url(ress/font/JosefinSans-Medium.ttf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: "JosefinSans", sans-serif;
+}
