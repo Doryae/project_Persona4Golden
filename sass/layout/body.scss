@@ -5,10 +5,8 @@ body {
 
 .index-section {
     display: flex;
-    position: relative;
-    top : 170px;
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
     box-shadow: 3px 3px 5px $header-secondary, -1px -1px 5px $header-secondary;
     border-radius: 10px;
     img {
