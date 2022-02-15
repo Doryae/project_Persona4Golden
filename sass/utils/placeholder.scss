@@ -1,0 +1,28 @@
+/*-----------------------------------------------------------------------------
+                                Placeholder
+-----------------------------------------------------------------------------*/
+
+%section-shadow {
+    box-shadow: 3px 3px 5px $secondary, -1px -1px 5px $secondary;
+    border-radius: 10px;
+}
+
+%img-style {
+    background: $golden;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px $primary, 0px 0px 5px $primary;
+    object-fit: contain;
+}
+
+%after-img-social {
+    white-space: pre;
+    position: absolute;
+    width: 202px;
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    left: 95px;
+    cursor: pointer;
+}

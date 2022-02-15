@@ -1,3 +1,7 @@
+/*-----------------------------------------------------------------------------
+                                Header
+-----------------------------------------------------------------------------*/
+
 header {
     position: sticky;
     top: 0;
@@ -6,8 +10,8 @@ header {
     width: 100%;
     height: 150px;
     padding: 0 3%;
-    background-color: $header-primary;
-    border-bottom: 5px solid $header-tertiary;
+    background-color: $primary;
+    border-bottom: 5px solid $tertiary;
     .logo {
         display: flex;
         align-items: center;
@@ -15,7 +19,7 @@ header {
     h1 {
         span {
             /*color: #FFE162;*/
-            color: $title-golden;
+            color: $golden;
             
         }
         a {
@@ -24,7 +28,7 @@ header {
             font-family: "JosefinSans-Bold", sans-serif;
             font-size: 1.25rem;
             color: white;
-            text-shadow: 3px 3px 3px $header-tertiary;
+            text-shadow: 3px 3px 3px $tertiary;
             text-decoration: none;
         }
         }
@@ -48,7 +52,7 @@ nav {
             display: block;
             text-decoration: none;
             color: white;
-            text-shadow: 2px 2px 3px $header-tertiary;
+            text-shadow: 2px 2px 3px $tertiary;
             &::after {
                 content:"";
                 position: absolute;
@@ -56,7 +60,7 @@ nav {
                 left: 0;
                 width: 100%;
                 height: 3px;
-                box-shadow: 0 3px 5px $header-tertiary;
+                box-shadow: 0 3px 5px $tertiary;
                 background: white;
                 transform: scale(0);
                 transition: transform .4s ease-in-out;

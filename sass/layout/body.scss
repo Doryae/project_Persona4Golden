@@ -1,24 +1,24 @@
 body {
-    /*background: #D1D1D1;*/
     background: #9D9D9D;
 }
 
-.index-section {
+
+/*-----------------------------------------------------------------------------
+                                Index.html
+-----------------------------------------------------------------------------*/
+
+.index-section { //section
     display: flex;
     width: 80%;
     margin: 20px auto;
-    box-shadow: 3px 3px 5px $header-secondary, -1px -1px 5px $header-secondary;
-    border-radius: 10px;
+    @extend %section-shadow;
     img {
         width: 200px;
         height: 200px;
         margin: 40px 20px;
-        background: $title-golden;
-        border-radius: 50%;
-        box-shadow: 3px 3px 5px $header-primary, 0px 0px 5px $header-primary;
-        object-fit: contain;
+        @extend %img-style;
     }
-    .img-yu {
+    .img-yu { // img end of dialogue
         display: flex;
         align-self: end;
     }
@@ -28,41 +28,115 @@ body {
     .dialogue {
         position: relative;
         padding: 25px 15px;
-        background: #C1DEAE;
+        background: $light-green;
         border-radius: 10px;
         margin: 10px 25px 10px 15px;
         &.yu {
-            background: $title-golden;
+            background: $golden;
         }
-        &::after {
+        &::after {// little "bubble-text" that pokes out of the boxes to make it like a social media message app' -> left-side
             content:"";
             position: absolute;
             top: 50%;
             left: -10px;
             transform: translate(-50%, -50%);
-            border-right: 20px solid #C1DEAE;
+            border-right: 20px solid $light-green;
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
         }
     }
     .dialogue:last-child {
         margin: 10px 25px 50px 15px;
-        &::after{
+        &::after{// little "bubble-text" that pokes out of the boxes to make it like a social media message app' -> right-side
             content:"";
             position: absolute;
             top: 50%;
             left: 101%;
             transform: translate(-50%, -50%);
-            border-left: 20px solid $title-golden;
+            border-left: 20px solid $golden;
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
             border-right: none;
         }
     }
     a {
-        text-decoration: underline 2px $header-tertiary;
+        text-decoration: underline 2px $tertiary;
         font-weight: bold;
         font-style: normal;
         color: black;
+    }
+}
+
+/*-----------------------------------------------------------------------------
+                        Social_links.html
+-----------------------------------------------------------------------------*/
+
+.social-links-section { //section
+    display: flex;
+    margin: 20px 50px;
+    @extend %section-shadow;
+    .social-links__aside { //aside
+        width: 300px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px 0;
+        border-radius: 10px 0 0 10px;
+        border-right: 5px solid $secondary;
+        img {
+            width: 175px;
+            height: 175px;
+            position: relative;
+            @extend %img-style;
+            cursor: pointer;
+            transition: .3s;
+            &:hover{
+                transform: scale(1.10);
+            }
+        }
+    }
+}
+
+/*-----------------------------------------------------------------------------
+                Pseudo-class::after for text below the img
+-----------------------------------------------------------------------------*/
+
+.img- {
+    &1{
+        &::after {
+            content: "Team d'investigation \A Arcane: le Fou";
+            @extend %after-img-social;
+            top: 325px;
+        }
+    }
+    &2{
+        &::after {
+            content: "Yosuke Hanamura \A Arcane: le Magicien";
+            @extend %after-img-social;
+            top: calc(325px + (2px) + 205px);
+        }
+    }
+    &3{
+        &::after {
+            content: "Chie Satonaka \A Arcane: le Chariot";
+            @extend %after-img-social;
+            top: calc(325px + (2px * 2) + (205px * 2));
+        }
+    }
+    &4{
+        &::after {
+            content: "Yukiko Amagi \A Arcane: la Prêtresse";
+            @extend %after-img-social;
+            top: calc(325px + (2px * 3) + (205px * 3));
+        }
+    }
+    &5{
+        &::after {
+            content: "Kanji Tatsumi \A Arcane: l'Empereur";
+            @extend %after-img-social;
+            top: calc(325px + (2px * 4) + (205px * 4));
+        }
     }
 }
