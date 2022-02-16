@@ -16,13 +16,16 @@
 
 %after-img-social {
     white-space: pre;
-    position: absolute;
+    position: relative;
+    display: block;
     width: 202px;
     background: black;
     color: white;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
-    left: 95px;
+    line-height: 24px;
+    top: -50px;
+    left: -12px;
     cursor: pointer;
 }
