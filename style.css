@@ -37,7 +37,7 @@ html {
   object-fit: contain;
 }
 
-.img-14::after, .img-13::after, .img-12::after, .img-11::after, .img-10::after, .img-9::after, .img-8::after, .img-7::after, .img-6::after, .img-5::after, .img-4::after, .img-3::after, .img-2::after, .img-1::after {
+.img-23::after, .img-22::after, .img-21::after, .img-20::after, .img-19::after, .img-18::after, .img-17::after, .img-16::after, .img-15::after, .img-14::after, .img-13::after, .img-12::after, .img-11::after, .img-10::after, .img-9::after, .img-8::after, .img-7::after, .img-6::after, .img-5::after, .img-4::after, .img-3::after, .img-2::after, .img-1::after {
   white-space: pre;
   position: relative;
   display: block;
@@ -132,27 +132,28 @@ body {
 .index-section {
   display: flex;
   width: 80%;
-  margin: 20px auto;
+  margin: 1rem auto;
   background-image: url(ress/img/texture.png);
+  background-color: #666;
 }
 .index-section img {
   width: 200px;
   height: 200px;
-  margin: 40px 20px;
+  margin: 2rem 1rem;
 }
 .index-section .img-yu {
   display: flex;
   align-self: end;
 }
 .index-section .dialogue:first-child {
-  margin: 50px 25px 10px 15px;
+  margin: 2.5rem 1.25rem 0.5rem 0.75rem;
 }
 .index-section .dialogue {
   position: relative;
   padding: 25px 15px;
   background: #C1DEAE;
   border-radius: 10px;
-  margin: 10px 25px 10px 15px;
+  margin: 0.5rem 1.25rem 0.5rem 0.75rem;
 }
 .index-section .dialogue.yu {
   background: #F1D00A;
@@ -168,7 +169,7 @@ body {
   border-bottom: 20px solid transparent;
 }
 .index-section .dialogue:last-child {
-  margin: 10px 25px 50px 15px;
+  margin: 0.5rem 1.25rem 2.5rem 0.75rem;
 }
 .index-section .dialogue:last-child::after {
   content: "";
@@ -176,9 +177,9 @@ body {
   top: 50%;
   left: 101%;
   transform: translate(-50%, -50%);
-  border-left: 20px solid #F1D00A;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-left: 1rem solid #F1D00A;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
   border-right: none;
 }
 .index-section a {
@@ -193,17 +194,18 @@ body {
 -----------------------------------------------------------------------------*/
 .social-links-section {
   display: flex;
-  margin: 20px 50px;
+  margin: 1rem 2.5rem;
   max-height: 1050px;
   background-image: url(ress/img/texture.png);
+  background-color: #666;
 }
 .social-links-section .social-links__aside {
-  width: 300px;
+  min-width: 300px;
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 1rem 0;
   border-radius: 10px 0 0 10px;
   overflow-y: scroll;
   /*-----------------------------------------------------------------------------
@@ -243,6 +245,40 @@ body {
 .social-links-section .social-links__aside img:active {
   transform: scale(1.1);
   transform: translate(-3px, -3px);
+}
+.social-links-section article {
+  display: none;
+  width: calc(90% - 300px);
+  margin: 0 auto;
+  color: #fff;
+  text-shadow: 2px 2px 5px #171717;
+}
+.social-links-section article h2 {
+  margin-top: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.social-links-section article h2, .social-links-section article h3, .social-links-section article h4 {
+  font-family: "JosefinSans-Bold", sans-serif;
+}
+.social-links-section article h3, .social-links-section article h4 {
+  margin: 1rem;
+}
+.social-links-section article p {
+  text-align: justify;
+  padding: 0.25rem;
+  line-height: 1.5rem;
+}
+.social-links-section article ul {
+  list-style: none;
+  line-height: 1.5rem;
+  margin: 0.75rem 0;
+}
+.social-links-section article hr {
+  color: rgba(255, 255, 255, 0.5);
+}
+.social-links-section article.on {
+  display: block;
 }
 
 /*-----------------------------------------------------------------------------
@@ -289,6 +325,33 @@ body {
 }
 .img-14::after {
   content: "Ryotarou Dojima \a Arcana: Hierophant";
+}
+.img-15::after {
+  content: "Tohru Adachi \a Arcana: Jester";
+}
+.img-16::after {
+  content: "Fox \a Arcana: Hermit";
+}
+.img-17::after {
+  content: "Hisano Kuroda \a Arcana: Death";
+}
+.img-18::after {
+  content: "Eri Minami \a Arcana: Temperance";
+}
+.img-19::after {
+  content: "Sayoko Uehara \a Arcana: Devil";
+}
+.img-20::after {
+  content: "Shu Nakajima \a Arcana: Tower";
+}
+.img-21::after {
+  content: "Margaret \a Arcana: Empress";
+}
+.img-22::after {
+  content: "Marie \a Arcana: Aeon";
+}
+.img-23::after {
+  content: "Seekers Of Truth \a Arcana: Judgement";
 }
 
 /*-----------------------------------------------------------------------------

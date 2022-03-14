@@ -10,13 +10,14 @@ body {
 .index-section { //section
     display: flex;
     width: 80%;
-    margin: 20px auto;
+    margin: 1rem auto;
     @extend %section-shadow;
     background-image: url(ress/img/texture.png);
+    background-color: $section-bg;
     img {
         width: 200px;
         height: 200px;
-        margin: 40px 20px;
+        margin: 2rem 1rem;
         @extend %img-style;
     }
     .img-yu { // img end of dialogue
@@ -24,14 +25,14 @@ body {
         align-self: end;
     }
     .dialogue:first-child {
-        margin: 50px 25px 10px 15px;
+        margin: 2.5rem 1.25rem 0.5rem 0.75rem;
     }
     .dialogue {
         position: relative;
         padding: 25px 15px;
         background: $light-green;
         border-radius: 10px;
-        margin: 10px 25px 10px 15px;
+        margin: 0.5rem 1.25rem 0.5rem 0.75rem;
         &.yu {
             background: $golden;
         }
@@ -47,16 +48,16 @@ body {
         }
     }
     .dialogue:last-child {
-        margin: 10px 25px 50px 15px;
+        margin: 0.5rem 1.25rem 2.5rem 0.75rem;
         &::after{// little "bubble-text" that pokes out of the boxes to make it like a social media message app' -> right-side
             content:"";
             position: absolute;
             top: 50%;
             left: 101%;
             transform: translate(-50%, -50%);
-            border-left: 20px solid $golden;
-            border-top: 20px solid transparent;
-            border-bottom: 20px solid transparent;
+            border-left: 1rem solid $golden;
+            border-top: 1rem solid transparent;
+            border-bottom: 1rem solid transparent;
             border-right: none;
         }
     }
@@ -74,17 +75,18 @@ body {
 
 .social-links-section { //section
     display: flex;
-    margin: 20px 50px;
+    margin: 1rem 2.5rem;
     max-height: 1050px;
     background-image: url(ress/img/texture.png);
+    background-color: $section-bg;
     @extend %section-shadow;
     .social-links__aside { //aside
-        width: 300px;
+        min-width: 300px;
         display: flex;
         justify-content: start;
         align-items: center;
         flex-direction: column;
-        padding: 20px 0;
+        padding: 1rem 0;
         border-radius: 10px 0 0 10px;
         overflow-y: scroll;
 /*-----------------------------------------------------------------------------
@@ -124,6 +126,40 @@ body {
                 transform: scale(1.10);
                 transform: translate(-3px, -3px);
             }
+        }
+    }
+    article{
+        display: none;
+        width: calc(90% - 300px);
+        margin: 0 auto;
+        color: #fff;
+        text-shadow: 2px 2px 5px $shadow-text;
+        h2 {
+            margin-top: 2.5rem;
+            text-align: center;
+            text-decoration: underline;
+        }
+        h2, h3, h4 {
+            font-family: "JosefinSans-Bold", sans-serif;
+        }
+        h3, h4 {
+            margin: 1rem;
+        }
+        p {
+            text-align: justify;
+            padding: 0.25rem;
+            line-height: 1.5rem;
+        }
+        ul {
+            list-style: none;
+            line-height: 1.5rem;
+            margin : 0.75rem 0;
+        }
+        hr {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        &.on {
+            display: block;
         }
     }
 }
@@ -214,6 +250,60 @@ body {
     &14{
         &::after{
             content: "Ryotarou Dojima \A Arcana: Hierophant";
+            @extend %after-img-social;
+        }
+    }
+    &15{
+        &::after{
+            content: "Tohru Adachi \A Arcana: Jester";
+            @extend %after-img-social;
+        }
+    }
+    &16{
+        &::after{
+            content: "Fox \A Arcana: Hermit";
+            @extend %after-img-social;
+        }
+    }
+    &17{
+        &::after{
+            content: "Hisano Kuroda \A Arcana: Death";
+            @extend %after-img-social;
+        }
+    }
+    &18{
+        &::after{
+            content: "Eri Minami \A Arcana: Temperance";
+            @extend %after-img-social;
+        }
+    }
+    &19{
+        &::after{
+            content: "Sayoko Uehara \A Arcana: Devil";
+            @extend %after-img-social;
+        }
+    }
+    &20{
+        &::after{
+            content: "Shu Nakajima \A Arcana: Tower";
+            @extend %after-img-social;
+        }
+    }
+    &21{
+        &::after{
+            content: "Margaret \A Arcana: Empress";
+            @extend %after-img-social;
+        }
+    }
+    &22{
+        &::after{
+            content: "Marie \A Arcana: Aeon";
+            @extend %after-img-social;
+        }
+    }
+    &23{
+        &::after{
+            content: "Seekers Of Truth \A Arcana: Judgement";
             @extend %after-img-social;
         }
     }
